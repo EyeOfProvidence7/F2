@@ -7,21 +7,17 @@
 /*If we are going to solve equations later, being able to work with
 the coefficients directly will be useful, so we use a struct
 */
-typedef struct Variable {
-	char name[100]; //assumed max length of name, will implement with malloc later
-	int coefficient;
-} Variable;
-	
-//From scanner.h
+
 typedef enum TokenType { 
   Number,
   Identifier,
   Symbol
 } TokenType;
 
+
 typedef union Token {
   int number;
-  Variable identifier;
+  char *identifier;
   char symbol;
 } Token;
 
