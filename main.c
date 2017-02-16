@@ -6,7 +6,7 @@ int main(int argc, char* argv[]){
   // This comment should appear if the result of the commit command was successful
   /* This is another comment that should be added by a push from andrew's branch.
    * I will cry if this fails.
-   *
+   * This is another addition to the branch with no meaning.
    *
    * */
 }
