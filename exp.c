@@ -4,6 +4,9 @@
 #include <ctype.h>  
 #include <assert.h> 
 
+#define MAXINPUT 100
+#define MAXIDENT 10
+
 /*If we are going to solve equations later, being able to work with
 the coefficients directly will be useful, so we use a struct
 */
@@ -35,8 +38,26 @@ typedef struct ListNode {
   List next;
 } ListNode;
 
+char* readInput(){
+    int strLen = MAXINPUT;
+    int c = getchar();
+    int i = 0;
+    char *s = malloc((strLen+1)*sizeof(char));
+    assert(s != NULL);
+    while(c != '\n'){
+        s[i] = c;
+        i++;
+        if (i >= strLen){
+            strLen = 2*strLen;
+            s = realloc(s, (strLen+1)*sizeof(char));
+            assert(s != NULL);
+        }
+        c = getchar();
+    }
+    s[i] = '\0';
+    return s;
+}
+
 int main(int argc, char* argv[]){
-    // Do stuff.
-    // Do more stuff.
     return 0;
 }
