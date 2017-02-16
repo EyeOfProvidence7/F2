@@ -34,3 +34,8 @@ typedef struct ListNode {
   Token t;
   List next;
 } ListNode;
+
+int main(int argc, char* argv[]){
+    // Do stuff.
+    return 0;
+}
