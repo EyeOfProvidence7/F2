@@ -7,9 +7,6 @@
 #define MAXINPUT 100
 #define MAXIDENT 10
 
-/*If we are going to solve equations later, being able to work with
-the coefficients directly will be useful, so we use a struct
-*/
 typedef enum TokenType { 
   Number,
   Identifier,
