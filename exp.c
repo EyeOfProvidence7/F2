@@ -38,6 +38,7 @@ typedef struct ListNode {
   List next;
 } ListNode;
 
+//Reads in an arithmetical expression into a char array.
 char* readInput(){
     int strLen = MAXINPUT;
     int c = getchar();
@@ -56,7 +57,7 @@ char* readInput(){
     }
     s[i] = '\0';
     return s;
-}
+}s
 
 int main(int argc, char* argv[]){
     return 0;
